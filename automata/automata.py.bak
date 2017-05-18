@@ -38,7 +38,7 @@ class Automata:
 
 			module_match_dict[module] = count
 
-		sorted_modules = sorted(list(module_match_dict.items()), key=operator.itemgetter(1))
+		sorted_modules = sorted(module_match_dict.items(), key=operator.itemgetter(1))
 
 		if sorted_modules[-1][1] == 0:
 			return 'No module found to execute this query'
