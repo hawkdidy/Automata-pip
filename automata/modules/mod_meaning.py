@@ -18,7 +18,7 @@ def run(query=''):
 				word = _query_list[i+1].lower()
 				break
 	except:
-		print 'Something went wrong'
+		print('Something went wrong')
 
 	_res = wordster.find_meaning(word)
 
